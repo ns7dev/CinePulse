@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CinePulse</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Scroll to Top Button -->
+<button id="scrollToTop" class="scroll-to-top">
+  ↑
+</button>
+
+  <header class="header">
+    <div class="logo">
+      <a href="#"><img src="img/logo.png" alt="CinePulse Logo"></a>
+    </div>
+    <nav class="nav-menu">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Movies</a></li>
+        <li><a href="#">TV Shows</a></li>
+        <li><a href="#">Categories</a></li>
+        <li><a href="#">My Account</a></li>
+      </ul>
+    </nav>
+    <div class="user-account">
+      <a href="#" class="sign-in">Sign In</a>
+    </div>
+  </header>
+
+
+  <section class="hero">
+    <div class="carousel">
+      <div class="carousel-wrapper">
+        <div class="carousel-slide">
+          <img src="img/slide1.jpg" alt="Featured Movie 1">
+          <div class="carousel-caption">
+            <h2>Featured Movie 1</h2>
+            <p>Watch the latest blockbuster now!</p>
+          </div>
+        </div>
+        <div class="carousel-slide">
+          <img src="img/slide2.jpg" alt="Featured Movie 2">
+          <div class="carousel-caption">
+            <h2>Featured Movie 2</h2>
+            <p>Experience the best in entertainment!</p>
+          </div>
+        </div>
+        <!-- Add more slides as needed -->
+      </div>
+    </div>
+    <div class="cta">
+      <a href="#" class="cta-button">Watch Now</a>
+    </div>
+  </section>
+
+
+
+   <!-- Main Content Area -->
+   <section class="content-area">
+    <!-- Sidebar (Optional) -->
+    <aside class="sidebar">
+        <button id="filterToggle">Filters</button>
+        <div id="filters" class="filter-section">
+            <h3>Filters</h3>
+            <label for="genre">Genre:</label>
+            <select id="genre">
+                <option value="all">All</option>
+                <option value="action">Action</option>
+                <option value="drama">Drama</option>
+            </select>
+            <label for="year">Release Year:</label>
+            <input type="number" id="year" placeholder="e.g., 2021">
+            <label for="rating">Rating:</label>
+            <input type="number" id="rating" min="0" max="10" step="0.1" placeholder="e.g., 8.5">
+            <button id="search" class="neon-button">Search</button>
+        </div>
+    </aside>
+
+
+
+<!-- Card Section with Play Links -->
+<section class="cards-section">
+  <h2>Featured Movies & TV Shows</h2>
+  <div class="cards">
+      <div class="card">
+          <div class="card-thumbnail">
+              <img src="img/tr.jpg" alt="Movie 1">
+              <div class="card-overlay">
+                  <a href="movie.html?movieId=1" class="quick-play">Play</a>
+              </div>
+          </div>
+          <div class="card-info">
+              <h3>Movie Title 1</h3>
+              <p class="rating">Rating: 8.5/10</p>
+              <p class="description">Brief description of the movie.</p>
+          </div>
+      </div>
+      <div class="card">
+          <div class="card-thumbnail">
+              <img src="img/ut.jpg" alt="Movie 2">
+              <div class="card-overlay">
+                  <a href="movie.html?movieId=2" class="quick-play">Play</a>
+              </div>
+          </div>
+          <div class="card-info">
+              <h3>Movie Title 2</h3>
+              <p class="rating">Rating: 7.8/10</p>
+              <p class="description">Brief description of the movie.</p>
+          </div>
+      </div>
+
+ 
+      <div class="card">
+        <div class="card-thumbnail">
+            <img src="img/yn.jpg" alt="Movie 2">
+            <div class="card-overlay">
+                <a href="movie.html?movieId=2" class="quick-play">Play</a>
+            </div>
+        </div>
+        <div class="card-info">
+            <h3>Movie Title 2</h3>
+            <p class="rating">Rating: 7.8/10</p>
+            <p class="description">Brief description of the movie.</p>
+        </div>
+    </div>
+
+    <div class="card">
+      <div class="card-thumbnail">
+          <img src="img/prt.jpg" alt="Movie 2">
+          <div class="card-overlay">
+              <a href="movie.html?movieId=2" class="quick-play">Play</a>
+          </div>
+      </div>
+      <div class="card-info">
+          <h3>Movie Title 2</h3>
+          <p class="rating">Rating: 7.8/10</p>
+          <p class="description">Brief description of the movie.</p>
+      </div>
+  </div>
+  <div class="card">
+    <div class="card-thumbnail">
+        <img src="img/ik.jpg" alt="Movie 2">
+        <div class="card-overlay">
+            <a href="movie.html?movieId=2" class="quick-play">Play</a>
+        </div>
+    </div>
+    <div class="card-info">
+        <h3>Movie Title 2</h3>
+        <p class="rating">Rating: 7.8/10</p>
+        <p class="description">Brief description of the movie.</p>
+    </div>
+</div>
+<div class="card">
+  <div class="card-thumbnail">
+      <img src="img/tr.jpg" alt="Movie 2">
+      <div class="card-overlay">
+          <a href="movie.html?movieId=2" class="quick-play">Play</a>
+      </div>
+  </div>
+  <div class="card-info">
+      <h3>Movie Title 2</h3>
+      <p class="rating">Rating: 7.8/10</p>
+      <p class="description">Brief description of the movie.</p>
+  </div>
+</div>
+<div class="card">
+  <div class="card-thumbnail">
+      <img src="img/dr.jpg" alt="Movie 2">
+      <div class="card-overlay">
+          <a href="movie.html?movieId=2" class="quick-play">Play</a>
+      </div>
+  </div>
+  <div class="card-info">
+      <h3>Movie Title 2</h3>
+      <p class="rating">Rating: 7.8/10</p>
+      <p class="description">Brief description of the movie.</p>
+  </div>
+</div>
+<div class="card">
+  <div class="card-thumbnail">
+      <img src="img/im.jpg" alt="Movie 2">
+      <div class="card-overlay">
+          <a href="movie.html?movieId=2" class="quick-play">Play</a>
+      </div>
+  </div>
+  <div class="card-info">
+      <h3>Movie Title 2</h3>
+      <p class="rating">Rating: 7.8/10</p>
+      <p class="description">Brief description of the movie.</p>
+  </div>
+</div>
+
+      <!-- Add more cards as needed -->
+  </div>
+  <button id="loadMore" class="neon-button">Load More</button>
+</section>
+</section>
+
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+        </ul>
+      </div>
+      <div class="footer-subscription">
+        <h3>Subscription Information</h3>
+        <ul>
+          <li><a href="#">Subscription Plans</a></li>
+          <li><a href="#">FAQs</a></li>
+          <li><a href="#">Customer Support</a></li>
+        </ul>
+      </div>
+      <div class="footer-newsletter">
+        <h3>Newsletter Signup</h3>
+        <p>Stay updated with the latest news and offers.</p>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Enter your email" required>
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+      <div class="footer-social">
+        <h3>Follow Us</h3>
+        <ul>
+          <li><a href="#" class="social-icon"><img src="img/facebook.png" alt="Facebook"></a></li>
+          <li><a href="#" class="social-icon"><img src="img/twitter.png" alt="Twitter"></a></li>
+          <li><a href="#" class="social-icon"><img src="img/instagram.png" alt="Instagram"></a></li>
+          <li><a href="#" class="social-icon"><img src="img/youtube.png" alt="YouTube"></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 CinePulse. All rights reserved.</p>
+    </div>
+  </footer>
+  
+  <script src="scripts.js"></script>
+</body>
+</html>
